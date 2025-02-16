@@ -1,0 +1,45 @@
+body {
+    background: black;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+.skills-section {
+    padding: 50px 0;
+}
+.skill-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+.skill-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+}
+.icon {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.progress {
+    height: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+.progress-bar {
+    height: 100%;
+    width: 0;
+    transition: width 1.5s ease-in-out;
+}
+.html { background: #ff5722; box-shadow: 0 0 10px #ff5722; }
+.css { background: #2196f3; box-shadow: 0 0 10px #2196f3; }
+.js { background: #ffeb3b; box-shadow: 0 0 10px #ffeb3b; }
+.bootstrap { background: #6f42c1; box-shadow: 0 0 10px #6f42c1; }
+.media-query { background: #00e676; box-shadow: 0 0 10px #00e676; }
+.uiux { background: #e91e63; box-shadow: 0 0 10px #e91e63; }
+.seo { background: #ff9800; box-shadow: 0 0 10px #ff9800; }
