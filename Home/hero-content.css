@@ -12,7 +12,7 @@
 #hero {
     position: relative;
     height: 100vh;
-    background: url('/assets/img/mohib.jpg') center/cover fixed; /* Parallax Effect */
+    background: url('../assets/img/mohib.jpg') center/cover fixed; /* Parallax Effect */
     display: flex;
     align-items: center;
     justify-content: center;
