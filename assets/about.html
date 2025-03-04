@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Navbar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Mohib's Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../Home/home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../About/about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#resume">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="about" class="about-section visible">
+        <div class="container text-center">
+            <h2 class="dynamic-text">Hello, I'm Mohib! 👋</h2>
+            <p class="description">I am a passionate web developer with a keen interest in creating intuitive and visually appealing digital experiences. My expertise lies in front-end technologies, ensuring websites are responsive and user-friendly. I am constantly learning and evolving to stay ahead in the fast-paced world of web development. My focus is on crafting high-performance, engaging, and innovative web solutions that leave a lasting impact.</p>
+            
+            <div class="skills-projects">
+                <div class="skills">
+                    <h3 class="heading">Skills & Expertise 🔧</h3>
+                    <ul>
+                        <li>Front-End Development: HTML, CSS, JavaScript, Bootstrap</li>
+                        <li>Responsive Design & UI/UX</li>
+                        <li>Frameworks & Tools: Bootstrap, jQuery</li>
+                        <li>Version Control: Git & GitHub</li>
+                    </ul>
+                </div>
+                <div class="projects">
+                    <h3 class="heading">Experience & Projects 💻</h3>
+                    <ul>
+                        <li>Personal Portfolio – Showcasing my work</li>
+                        <li>Astronomy Website – Interactive space exploration</li>
+                        <li>Horror Games Review Page – Insights on horror games</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="about-info fade-in" style="display: flex; align-items: center; justify-content: center; gap: 40px;">
+                <img src="../assets/img/mohib.jpg" alt="Mohib's Photo">
+                <ul class="info-list">
+                    <li><strong>Name:</strong> Mohib</li>
+                    <li><strong>Birthday:</strong> 8 sep 2009</li>
+                    <li><strong>Website:</strong> <a href="https://www.example.com" target="_blank">www.mohib-portfolio.com</a></li>
+                    <li><strong>Phone:</strong> +92 2482 2407 3</li>
+                    <li><strong>City:</strong> Karachi,Pakistan</li>
+                    <li><strong>Age:</strong> 15</li>
+                    <li><strong>Degree:</strong> Matric pass</li>
+                    <li><strong>Email:</strong> <a href="mailto:email@example.com">raza@email.com</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="container text-center">
+            <p class="footer-text">© 2025 Mohib | All Rights Reserved</p>
+            <div class="social-icons">
+                <a href="#" class="icon facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" class="icon twitter"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" class="icon instagram"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            
+        </div>
+    </footer>
+    <button id="scrollTopBtn">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+    <audio id="bg-music" autoplay loop>
+        <source src="../assets/audio/astronomia.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    
+  
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+
+    <script src="about.js"></script>
+</body>
+</html>

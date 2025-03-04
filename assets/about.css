@@ -1,0 +1,201 @@
+body {
+    background-color: #121212;
+    color: white;
+    font-family: Arial, sans-serif;
+    padding-bottom: 80px;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    padding: 15px 20px;
+    z-index: 1000;
+}
+.about-section {
+    padding: 120px 20px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+.about-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.about-info {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+    justify-content: center;
+    transition: transform 0.3s ease-in-out;
+}
+.about-info:hover {
+    transform: scale(1.05);
+}
+.about-info img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+.about-info img:hover {
+    transform: rotate(5deg) scale(1.1);
+}
+.info-list {
+    list-style: none;
+    padding: 0;
+    font-size: 22px;
+}
+.info-list li {
+    transition: color 0.3s ease-in-out;
+}
+.info-list li:hover {
+    color: #00bcd4;
+}
+.description {
+    margin-top: 50px;
+    font-size: 24px;
+    line-height: 1.8;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.skills-projects {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.skills, .projects {
+    flex: 1;
+    padding: 20px;
+    font-size: 22px;
+    transition: transform 0.3s ease-in-out;
+}
+.skills:hover, .projects:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 25px;
+}
+.dynamic-text {
+    font-size: 32px;
+    font-weight: bold;
+    color: red;
+    animation: textChange 6s infinite;
+}
+@keyframes textChange {
+    0% { color: red; content: "Hello, I'm Mohib!"; }
+    33% { color: yellow; content: "Hi, I'm a Designer!"; }
+    66% { color: green; content: "Hi, I'm a Gamer!"; }
+    100% { color: red; content: "Hello, I'm Mohib!"; }
+}
+.heading {
+    animation: colorChange 6s infinite;
+}
+@keyframes colorChange {
+    0% { color: orange; }
+    33% { color: blue; }
+    66% { color: purple; }
+    100% { color: orange; }
+}
+.footer {
+    background: #111;
+    padding: 20px 0;
+    position: relative;
+    text-align: center;
+    animation: fadeInUp 1s ease-in-out;
+}
+.footer-text {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.icon {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+.icon:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+.facebook:hover { background: #3b5998; }
+.twitter:hover { background: #1da1f2; }
+.instagram:hover { background: #e1306c; }
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+#scrollTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 50%;
+    color: white;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+#scrollTopBtn:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+#scrollTopBtn.show {
+    opacity: 1;
+    visibility: visible;
+}
+#musicBtn {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background: #00bcd4;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+#musicBtn:hover {
+    background: #008C9E;
+}
